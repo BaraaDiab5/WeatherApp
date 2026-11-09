@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <header class="search-bar">
+                <input type="text" name="City" id="City" placeholder="Search City">
+                <button class="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </header>
+
+            <div class="content">
+                <div class="state-initial">
+                    <img src="img/Gemini_Generated_Image_dxtcewdxtcewdxtc-removebg-preview.png" alt="content-icon">
+                    <h2>Search City</h2>
+                    <p>Find out the weather conditions of the city</p>
+                </div>
+
+                <div class="state-weather nonActive">
+                    <div class="important-info">
+                        <div class="city-name">
+                            <svg class="location-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5ae0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+                                <circle cx="12" cy="9" r="2.5"></circle>
+                              </svg>
+                            <div class="name"></div>
+                        </div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="now-state-weather">
+                        <div class="icon-state-now">
+                            <img alt="icon weather" class="icon" width="150px" height="150px">
+                        </div>
+                        <div class="state-of-number">
+                            <div class="degree"></div>
+                            <div class="description"></div>
+                        </div>
+                    </div>
+
+                    <div class="other-info">
+                        <div class="part1">
+                            <svg class="humidity-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#5ae0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                              </svg>
+                            <div class="humidity">
+                                <p>Humidity</p>
+                                <div class="humidity-val"></div>
+                            </div>
+                        </div>
+                        <div class="part2">
+                            <svg class="wind-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#5ae0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path>
+                                <path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path>
+                                <path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path>
+                              </svg>
+                            <div class="wind">
+                                <p>Wind Speed</p>
+                                <div class="wind-val"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-to-next"></div>
+                </div>
+            </div>
+            <div class="content-error nonActive">
+                <img src="img/Gemini_Generated_Image_65g2ux65g2ux65g2-removebg-preview.png">
+                <div class="number-error"></div>
+                <div class="message-error"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>

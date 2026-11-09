@@ -40,7 +40,7 @@
 @media (max-width : 310px) {
     .container{
         width: 100% !important;
-        height: 600px;
+        height: 700px;
         margin: 0 10px;
     }
     .container .content .state-initial img{
